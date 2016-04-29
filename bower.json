@@ -2,10 +2,10 @@
   "name": "starter-node-angular",
   "version": "1.0.0",
   "dependencies": {
-    "boostrap": "latest",
-    "front-awesome": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
     "animate.css": "latest",
     "angular": "latest",
-    "angular-routes": "latest"
+    "angular-route": "latest"
   }
 }
