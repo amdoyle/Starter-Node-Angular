@@ -1,4 +1,4 @@
-angular.module('NerdServices', []).factory('Nerd', ['$http', function($http) {
+angular.module('NerdService', []).factory('Nerd', ['$http', function($http) {
 
   return {
     // call to get all the nerds from the node backend api
@@ -13,7 +13,7 @@ angular.module('NerdServices', []).factory('Nerd', ['$http', function($http) {
       return $http.post('/api/nerds', nerdData);
     },
 
-    // call to DELETE a nerd 
+    // call to DELETE a nerd
     delete : function(id) {
       return $http.delete('/api/nerds/' + id);
     }

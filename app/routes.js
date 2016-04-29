@@ -1,7 +1,4 @@
-// grab the nerd model
-var Nerd = require('./app/models/nerd');
-
-  module.exports = function(app) {
+module.exports = function(app) {
     // server routes ===========================================================
 
     // sample routes -----------------------------------------------------------
@@ -19,7 +16,7 @@ var Nerd = require('./app/models/nerd');
     // frontend routes =========================================================
     // these routes to handle all angular requests
     app.get('*', function(req, res) {
-      res.sendfile('./public/views/index.html'); // load our public/index.html file
+      res.sendfile('./public/index.html'); // load our public/index.html file
     });
 
   }
